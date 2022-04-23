@@ -1,0 +1,22 @@
+.customers-list {
+    display: flex; 
+    justify-content: space-between;
+    }
+.customers-link {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            fill: var(--accent-color);
+            }
+    }
+.customers-card {
+    flex-basis: calc((100% - 150px) /6);
+    }
