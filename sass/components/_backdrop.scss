@@ -1,3 +1,28 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    // height: 609px;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+                0px 1px 1px rgba(0, 0, 0, 0.14), 
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 40px;
+}
+.contact-form-title {
+    display: block;
+    font-family: var(--primary-font-family);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-font-color);
+    width: 370px;
+}
 .backdrop {
     position: fixed;
     top: 0;
@@ -13,20 +38,6 @@
             visibility: hidden;
             pointer-events: none;
         }
-}
-.modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 528px;
-    height: 580px;
-    background-color: #fff;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
-                0px 1px 1px rgba(0, 0, 0, 0.14), 
-                0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    padding: 40px;
 }
 .modal-close-button {
     position: absolute;
@@ -50,16 +61,6 @@
             border-color: var(--accent-color);
             fill: var(--accent-color);
         }
-}
-.contact-form-title {
-    display: block;
-    font-family: var(--primary-font-family);
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--main-font-color);
 }
 .contact-form-field {
     display: block;
@@ -129,10 +130,11 @@
 .contact-form-checkbox-label {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 20px;
-    font-family: var(--primary-font-family);
-    font-size: 14px;
-    line-height: 1,71;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1,17;
     letter-spacing: 0.03em;
     color: var(--secondary-font-color);
         &::before {
@@ -179,3 +181,33 @@
             background-color: var(--hover-focus-btn-color);
         }
 }
+
+// 0px - 1199px
+@media screen and (max-width: 1199px) {
+   
+}
+
+  // 768px +
+  @media screen and (min-width: 768px) {
+      
+}
+    // 768px +
+    @media screen and (min-width: 768px) {
+      
+
+    }
+    // 1200px +
+    @media screen and (min-width: 1200px) {
+        .modal {
+            width:528px;
+            height: 580px;
+        }
+        .contact-form-title {
+            line-height: 1.15;
+            width: auto;
+        }
+        .contact-form-checkbox-label {
+            font-size: 14px;
+            line-height: 1,71;
+        }
+    }
