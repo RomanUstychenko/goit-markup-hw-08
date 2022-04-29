@@ -1,9 +1,13 @@
-
+.about-container{
+    padding-top: 60px;
+}
 .about-container__list {
     display: block;
     align-items: center;
     justify-content: center;
-    padding-top: 60px;
+        &:not(:first-child) {
+            padding-top: 30px;
+        }
 }
 .about-container__icon {
     display: flex;
@@ -11,10 +15,10 @@
     justify-content: center;
     height: 120px;
     background-color: var(--team-background-color);
-    background-color: tomato;
     border-radius: 4px;
 }
 .about-container__title {
+    padding-top: 30px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
