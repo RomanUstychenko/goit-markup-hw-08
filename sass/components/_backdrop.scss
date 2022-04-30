@@ -4,7 +4,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 450px;
-    // height: 609px;
     background-color: #fff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
                 0px 1px 1px rgba(0, 0, 0, 0.14), 
@@ -181,33 +180,17 @@
             background-color: var(--hover-focus-btn-color);
         }
 }
-
-// 0px - 1199px
-@media screen and (max-width: 1199px) {
-   
+// 1200px +
+@media screen and (min-width: 1200px) {
+    .modal {
+        width:528px;
+        }
+    .contact-form-title {
+        line-height: 1.15;
+        width: auto;
+        }
+    .contact-form-checkbox-label {
+        font-size: 14px;
+        line-height: 1,71;
+        }
 }
-
-  // 768px +
-  @media screen and (min-width: 768px) {
-      
-}
-    // 768px +
-    @media screen and (min-width: 768px) {
-      
-
-    }
-    // 1200px +
-    @media screen and (min-width: 1200px) {
-        .modal {
-            width:528px;
-            height: 580px;
-        }
-        .contact-form-title {
-            line-height: 1.15;
-            width: auto;
-        }
-        .contact-form-checkbox-label {
-            font-size: 14px;
-            line-height: 1,71;
-        }
-    }
