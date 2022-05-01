@@ -5,20 +5,18 @@
         text-align: center;
         letter-spacing: 0.03em;
         color: var(--main-font-color);
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         }
-
-
-
-
-
-// .services-title,
-// .team-title {
-//     font-weight: 700;
-//     font-size: 36px;
-//     line-height: 1.17;
-//     text-align: center;
-//     letter-spacing: 0.03em;
-//     color: var(--main-font-color);
-//     margin-bottom: 50px;
-//     }
+// 1200px +
+@media screen and (min-width: 1200px) {
+.services-title,
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-font-color);
+    margin-bottom: 50px;
+    }
+}

@@ -1,72 +1,100 @@
+// 0px - 1199px
+@media screen and (max-width: 1199px) {
+    .team-list__card {
+    &:nth-child(n + 3) {
+        margin-top: 30px;
+        }
+    }
+}
+// 0px - 767px
+@media screen and (max-width: 767px) {
+    .team-list__card {
+        &:not(:first-child) {
+            margin-top: 30px;
+            }
+        }
+}
 .team {
     background: var(--team-background-color);
     }
-
-
-
-
-
-
-// .team {
-//     background: var(--team-background-color);
-//     }
-// .team-list {
-//     display: flex;
-//     margin-left: -30px;
-//     }
-// .team-list__card {
-//     margin-left: 30px;
-//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-//                 0px 1px 1px rgba(0, 0, 0, 0.14), 
-//                 0px 2px 1px rgba(0, 0, 0, 0.2);
-//     border-radius: 0px 0px 4px 4px;
-//     }
-// .team-list__description {
-//     padding-top: 30px;
-//     padding-bottom: 30px;
-//     background-color: var(--main-background-color);
-//     }
-// .team-list__name {
-//     margin-bottom: 10px;
-//     font-weight: 500;
-//     font-size: 16px;
-//     line-height: 1.19;
-//     text-align: center;
-//     letter-spacing: 0.03em;
-//     color: var(--main-font-color);
-//     }
-// .team-list__profession {
-//     font-size: 16px;
-//     line-height: 1.19;
-//     text-align: center;
-//     letter-spacing: 0.03em; 
-//     color: var(--secondary-font-color);
-//     }
-// .team-networks {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     margin-top: 16px;
-//     }
-// .team-networks__link {
-//     display: flex; 
-//     justify-content: center;
-//     align-items: center;
-//     width: 44px;
-//     height: 44px;
-//     border-radius: 50%;
-//     background-color: var(--main-background-color);
-//     fill: #AFB1B8;
-//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-//                 background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//         &:hover,
-//         &:focus {
-//             fill: var(--main-background-color);
-//             background-color: var(--accent-color);
-//             }
-//     }
-// .team-networks__list {
-//         &:not(:first-child) {
-//             margin-left: 10px;
-//             }
-// }
+.team-list__img {
+    width: 450px;
+    height: 460px;
+}
+.team-list__card {
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                    0px 1px 1px rgba(0, 0, 0, 0.14), 
+                    0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        }
+.team-list__description {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: var(--main-background-color);
+        }
+.team-list__name {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-font-color);
+    }
+.team-list__profession {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em; 
+    color: var(--secondary-font-color);
+    }
+.team-networks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    }
+.team-networks__link {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--main-background-color);
+    fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            fill: var(--main-background-color);
+            background-color: var(--accent-color);
+            }
+    }
+.team-networks__list {
+        &:not(:first-child) {
+            margin-left: 10px;
+            }
+        }
+ // 768px +
+ @media screen and (min-width: 768px) {
+    .team-list__img {
+        width: 354px;
+        height: 374px;
+    }
+    .team-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+        }
+    .team-list__card {
+        margin-left: 30px;
+        }
+ }
+// 1200px +
+@media screen and (min-width: 1200px) {
+    .team-list__img {
+        width: 270px;
+        height: 260px;
+    }
+}
