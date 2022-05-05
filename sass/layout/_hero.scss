@@ -8,8 +8,19 @@
          color: var(--main-background-color);
          }
 .hero-section {
+        display: flex;
         background-color: var(--hero-footer-background-color);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/bg/bg-hero.jpg);
+        background-size: cover;
         height: 400px;
+        flex-grow: 1;
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                                url(../images/bg/bg-hero2x.jpg);
+                }
 }
 .hero-container {
      display: flex;
@@ -17,9 +28,7 @@
      align-items: center;
      justify-content: center;
      }
-.hero-section {
-        display: flex;
-     }
+
 
 // 1-50
  // 1200px +
