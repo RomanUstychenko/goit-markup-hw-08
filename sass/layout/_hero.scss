@@ -10,17 +10,8 @@
 .hero-section {
         display: flex;
         background-color: var(--hero-footer-background-color);
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/bg/bg-hero.jpg);
         background-size: cover;
-        height: 400px;
         flex-grow: 1;
-                @media (min-device-pixel-ratio: 2),
-                (min-resolution: 192dpi),
-                (min-resolution: 2dppx) {
-                        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                                url(../images/bg/bg-hero2x.jpg);
-                }
 }
 .hero-container {
      display: flex;
@@ -28,26 +19,47 @@
      align-items: center;
      justify-content: center;
      }
-
-
-// 1-50
+// 0px +767px
+@media screen and (max-width: 767px) {
+.hero-section {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        url(../images/bg/bg-hero-mobile.jpg);
+        height: 400px;
+        @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                        url(../images/bg/bg-hero-mobile@2x.jpg);
+                }
+        }
+}
+// 768px +
+@media screen and (min-width: 768px) {
+.hero-section {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        url(../images/bg/bg-hero-tablet.jpg);
+        height: 400px;
+        @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                        url(../images/bg/bg-hero-tablet@2x.jpg);
+                }
+        }  
+}
  // 1200px +
  @media screen and (min-width: 1200px) {
 .hero-section {
-    background-color: var(--hero-footer-background-color);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-     url(../images/bg/bg-hero.jpg);
-     background-size: cover;
+     url(../images/bg/bg-hero-desktop.jpg);
     height: 600px;
-    flex-grow: 1;
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
                 background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                 url(../images/bg/bg-hero2x.jpg);
+                 url(../images/bg/bg-hero-desktop@2x.jpg);
         }
    }
-
 .hero-title {
     font-weight: 900;
     font-size: 44px;
@@ -57,5 +69,4 @@
     text-transform: uppercase;
     color: var(--main-background-color);
      }
-    
   }
