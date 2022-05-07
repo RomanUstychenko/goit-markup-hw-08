@@ -47,7 +47,7 @@
     </button>
     </div>
     <div class="container mobile-menu" data-menu>
-      <div class=" mobile-menu__container">
+      <div class="mobile-menu__container">
         <button type="button" class="mobile-menu__close-btn" data-menu-close>
           <svg class="mobile-menu__close-icon" width="40" height="40">
             <use href="./images/svg/sprite.svg#close-icon-menu"></use>
@@ -92,11 +92,11 @@
     </div>
     </header>
     <main>
-   <!-- <section class="sections">
+   <section class="sections">
      <div class="container">
       <ul class="list list-portfolio">
         <li class="btn-list-portfolio">
-         <button class="portfolio-btn" type="button">Все</button>
+         <button class="portfolio-btn active-btn-pf" type="button">Все</button>
         </li>
         <li class="btn-list-portfolio">
          <button class="portfolio-btn" type="button">Веб-сайты</button>
@@ -117,7 +117,40 @@
         <li class="portfolio-group">
           <a class="portfolio-group-link link" href="">
             <div class="portfolio-group-img-link">
-              <img src="./images/portfolio/web.jpg" alt="Веб-сайт" width="370" height="294">
+              <picture>
+                <source
+                srcset="./images/portfolio/web-desktop.webp 1x, ./images/portfolio/web-desktop@2x.webp 2x" 
+                media="(min-width: 1200px)"
+                type="image/webp"
+                />
+                <source
+                    srcset="./images/portfolio/web-desktop.jpg 1x, ./images/portfolio/web-desktop@2x.jpg 2x" 
+                    media="(min-width: 1200px)"
+                />
+                <source
+                srcset="./images/portfolio/web-tablet.webp 1x, ./images/portfolio/web-tablet@2x.webp 2x" 
+                media="(min-width: 768px)"
+                type="image/webp"
+                />
+                <source 
+                    srcset="./images/portfolio/web-tablet.jpg 1x, ./images/portfolio/web-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)" 
+                />
+                <source
+                srcset="./images/portfolio/web-mobile.webp 1x, ./images/portfolio/web-mobile@2x.webp 2x" 
+                media="(max-width: 767px)"
+                type="image/webp"
+                />
+                <source 
+                    srcset="./images/portfolio/web-mobile.jpg 1x, ./images/portfolio/web-mobile@2x.jpg 2x" 
+                    media="(max-width: 767px)" 
+                />
+                    <img 
+                    class="portfolio-group-img"
+                    src="./images/portfolio/web-desktop.jpg" 
+                    alt="Веб-сайт"
+                    />
+            </picture>
               <p class="overlay">
                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
               </p>
@@ -131,7 +164,40 @@
         <li class="portfolio-group">
           <a class="portfolio-group-link link" href="">
             <div class="portfolio-group-img-link">
-              <img src="./images/portfolio/design.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294">
+              <picture>
+              <source
+              srcset="./images/portfolio/design-desktop.webp 1x, ./images/portfolio/design-desktop@2x.webp 2x" 
+              media="(min-width: 1200px)"
+              type="image/webp"
+              />
+              <source
+                  srcset="./images/portfolio/design-desktop.jpg 1x, ./images/portfolio/design-desktop@2x.jpg 2x" 
+                  media="(min-width: 1200px)"
+              />
+              <source
+              srcset="./images/portfolio/design-tablet.webp 1x, ./images/portfolio/design-tablet@2x.webp 2x" 
+              media="(min-width: 768px)"
+              type="image/webp"
+              />
+              <source 
+                  srcset="./images/portfolio/design-tablet.jpg 1x, ./images/portfolio/design-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)" 
+              />
+              <source
+              srcset="./images/portfolio/design-mobile.webp 1x, ./images/portfolio/design-mobile@2x.webp 2x" 
+              media="(max-width: 767px)"
+              type="image/webp"
+              />
+              <source 
+                  srcset="./images/portfolio/design-mobile.jpg 1x, ./images/portfolio/design-mobile@2x.jpg 2x" 
+                  media="(max-width: 767px)" 
+              />
+                  <img 
+                  class="portfolio-group-img"
+                  src="./images/portfolio/design-desktop.jpg" 
+                  alt="Постер New Orlean vs Golden Star"
+                  />
+          </picture>
               <p class="overlay">
                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
               </p>
@@ -145,7 +211,40 @@
         <li class="portfolio-group">
           <a class="portfolio-group-link link" href="">
             <div class="portfolio-group-img-link">
-              <img src="./images/portfolio/seafood.jpg" alt="Seafood" width="370" height="294">
+              <picture>
+                <source
+                srcset="./images/portfolio/seafood-desktop.webp 1x, ./images/portfolio/seafood-desktop@2x.webp 2x" 
+                media="(min-width: 1200px)"
+                type="image/webp"
+                />
+                <source
+                    srcset="./images/portfolio/seafood-desktop.jpg 1x, ./images/portfolio/seafood-desktop@2x.jpg 2x" 
+                    media="(min-width: 1200px)"
+                />
+                <source
+                srcset="./images/portfolio/seafood-tablet.webp 1x, ./images/portfolio/seafood-tablet@2x.webp 2x" 
+                media="(min-width: 768px)"
+                type="image/webp"
+                />
+                <source 
+                    srcset="./images/portfolio/seafood-tablet.jpg 1x, ./images/portfolio/seafood-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)" 
+                />
+                <source
+                srcset="./images/portfolio/seafood-mobile.webp 1x, ./images/portfolio/seafood-mobile@2x.webp 2x" 
+                media="(max-width: 767px)"
+                type="image/webp"
+                />
+                <source 
+                    srcset="./images/portfolio/seafood-mobile.jpg 1x, ./images/portfolio/seafood-mobile@2x.jpg 2x" 
+                    media="(max-width: 767px)" 
+                />
+                    <img 
+                    class="portfolio-group-img"
+                    src="./images/portfolio/seafood-desktop.jpg" 
+                    alt="Seafood"
+                    />
+            </picture>
               <p class="overlay">
                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
               </p>
@@ -159,7 +258,40 @@
         <li class="portfolio-group">
           <a class="portfolio-group-link link" href="">
             <div class="portfolio-group-img-link">
-              <img src="./images/portfolio/prime.jpg" alt="Наушники" width="370" height="294">
+              <picture>
+                <source
+                srcset="./images/portfolio/prime-desktop.webp 1x, ./images/portfolio/prime-desktop@2x.webp 2x" 
+                media="(min-width: 1200px)"
+                type="image/webp"
+                />
+                <source
+                    srcset="./images/portfolio/prime-desktop.jpg 1x, ./images/portfolio/prime-desktop@2x.jpg 2x" 
+                    media="(min-width: 1200px)"
+                />
+                <source
+                srcset="./images/portfolio/prime-tablet.webp 1x, ./images/portfolio/prime-tablet@2x.webp 2x" 
+                media="(min-width: 768px)"
+                type="image/webp"
+                />
+                <source 
+                    srcset="./images/portfolio/prime-tablet.jpg 1x, ./images/portfolio/prime-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)" 
+                />
+                <source
+                srcset="./images/portfolio/prime-mobile.webp 1x, ./images/portfolio/prime-mobile@2x.webp 2x" 
+                media="(max-width: 767px)"
+                type="image/webp"
+                />
+                <source 
+                    srcset="./images/portfolio/prime-mobile.jpg 1x, ./images/portfolio/prime-mobile@2x.jpg 2x" 
+                    media="(max-width: 767px)" 
+                />
+                    <img 
+                    class="portfolio-group-img"
+                    src="./images/portfolio/prime-desktop.jpg" 
+                    alt="Наушники"
+                    />
+            </picture>
               <p class="overlay">
                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
               </p>
@@ -173,7 +305,40 @@
         <li class="portfolio-group">
           <a class="portfolio-group-link link" href="">
             <div class="portfolio-group-img-link">
-              <img src="./images/portfolio/boxes.jpg" alt="Коробки" width="370" height="294">
+              <picture>
+                <source
+                srcset="./images/portfolio/boxes-desktop.webp 1x, ./images/portfolio/boxes-desktop@2x.webp 2x" 
+                media="(min-width: 1200px)"
+                type="image/webp"
+                />
+                <source
+                    srcset="./images/portfolio/boxes-desktop.jpg 1x, ./images/portfolio/boxes-desktop@2x.jpg 2x" 
+                    media="(min-width: 1200px)"
+                />
+                <source
+                srcset="./images/portfolio/boxes-tablet.webp 1x, ./images/portfolio/boxes-tablet@2x.webp 2x" 
+                media="(min-width: 768px)"
+                type="image/webp"
+                />
+                <source 
+                    srcset="./images/portfolio/boxes-tablet.jpg 1x, ./images/portfolio/boxes-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)" 
+                />
+                <source
+                srcset="./images/portfolio/boxes-mobile.webp 1x, ./images/portfolio/boxes-mobile@2x.webp 2x" 
+                media="(max-width: 767px)"
+                type="image/webp"
+                />
+                <source 
+                    srcset="./images/portfolio/boxes-mobile.jpg 1x, ./images/portfolio/boxes-mobile@2x.jpg 2x" 
+                    media="(max-width: 767px)" 
+                />
+                    <img 
+                    class="portfolio-group-img"
+                    src="./images/portfolio/boxes-desktop.jpg" 
+                    alt="Коробки"
+                    />
+            </picture>
               <p class="overlay">
               Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
               </p>
@@ -187,7 +352,40 @@
         <li class="portfolio-group">
           <a class="portfolio-group-link link" href="">
             <div class="portfolio-group-img-link">
-              <img src="./images/portfolio/inspiration.jpg" alt="Монитор" width="370" height="294">
+              <picture>
+                <source
+                srcset="./images/portfolio/inspiration-desktop.webp 1x, ./images/portfolio/inspiration-desktop@2x.webp 2x" 
+                media="(min-width: 1200px)"
+                type="image/webp"
+                />
+                <source
+                    srcset="./images/portfolio/inspiration-desktop.jpg 1x, ./images/portfolio/inspiration-desktop@2x.jpg 2x" 
+                    media="(min-width: 1200px)"
+                />
+                <source
+                srcset="./images/portfolio/inspiration-tablet.webp 1x, ./images/portfolio/inspiration-tablet@2x.webp 2x" 
+                media="(min-width: 768px)"
+                type="image/webp"
+                />
+                <source 
+                    srcset="./images/portfolio/inspiration-tablet.jpg 1x, ./images/portfolio/inspiration-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)" 
+                />
+                <source
+                srcset="./images/portfolio/inspiration-mobile.webp 1x, ./images/portfolio/inspiration-mobile@2x.webp 2x" 
+                media="(max-width: 767px)"
+                type="image/webp"
+                />
+                <source 
+                    srcset="./images/portfolio/inspiration-mobile.jpg 1x, ./images/portfolio/inspiration-mobile@2x.jpg 2x" 
+                    media="(max-width: 767px)" 
+                />
+                    <img 
+                    class="portfolio-group-img"
+                    src="./images/portfolio/inspiration-desktop.jpg" 
+                    alt="Монитор"
+                    />
+            </picture>
               <p class="overlay">
                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
               </p>
@@ -201,7 +399,40 @@
         <li class="portfolio-group">
           <a class="portfolio-group-link link" href="">
             <div class="portfolio-group-img-link">
-              <img src="./images/portfolio/limited.jpg" alt="Журнал" width="370" height="294">
+              <picture>
+                <source
+                srcset="./images/portfolio/limited-desktop.webp 1x, ./images/portfolio/limited-desktop@2x.webp 2x" 
+                media="(min-width: 1200px)"
+                type="image/webp"
+                />
+                <source
+                    srcset="./images/portfolio/limited-desktop.jpg 1x, ./images/portfolio/limited-desktop@2x.jpg 2x" 
+                    media="(min-width: 1200px)"
+                />
+                <source
+                srcset="./images/portfolio/limited-tablet.webp 1x, ./images/portfolio/limited-tablet@2x.webp 2x" 
+                media="(min-width: 768px)"
+                type="image/webp"
+                />
+                <source 
+                    srcset="./images/portfolio/limited-tablet.jpg 1x, ./images/portfolio/limited-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)" 
+                />
+                <source
+                srcset="./images/portfolio/limited-mobile.webp 1x, ./images/portfolio/limited-mobile@2x.webp 2x" 
+                media="(max-width: 767px)"
+                type="image/webp"
+                />
+                <source 
+                    srcset="./images/portfolio/limited-mobile.jpg 1x, ./images/portfolio/limited-mobile@2x.jpg 2x" 
+                    media="(max-width: 767px)" 
+                />
+                    <img 
+                    class="portfolio-group-img"
+                    src="./images/portfolio/limited-desktop.jpg" 
+                    alt="Журнал"
+                    />
+            </picture>
               <p class="overlay">
                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
               </p>
@@ -215,7 +446,40 @@
         <li class="portfolio-group">
           <a class="portfolio-group-link link" href="">
             <div class="portfolio-group-img-link">
-              <img src="./images/portfolio/lab.jpg" alt="Проект" width="370" height="294">
+              <picture>
+                <source
+                srcset="./images/portfolio/lab-desktop.webp 1x, ./images/portfolio/lab-desktop@2x.webp 2x" 
+                media="(min-width: 1200px)"
+                type="image/webp"
+                />
+                <source
+                    srcset="./images/portfolio/lab-desktop.jpg 1x, ./images/portfolio/lab-desktop@2x.jpg 2x" 
+                    media="(min-width: 1200px)"
+                />
+                <source
+                srcset="./images/portfolio/lab-tablet.webp 1x, ./images/portfolio/lab-tablet@2x.webp 2x" 
+                media="(min-width: 768px)"
+                type="image/webp"
+                />
+                <source 
+                    srcset="./images/portfolio/lab-tablet.jpg 1x, ./images/portfolio/lab-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)" 
+                />
+                <source
+                srcset="./images/portfolio/lab-mobile.webp 1x, ./images/portfolio/lab-mobile@2x.webp 2x" 
+                media="(max-width: 767px)"
+                type="image/webp"
+                />
+                <source 
+                    srcset="./images/portfolio/lab-mobile.jpg 1x, ./images/portfolio/lab-mobile@2x.jpg 2x" 
+                    media="(max-width: 767px)" 
+                />
+                    <img 
+                    class="portfolio-group-img"
+                    src="./images/portfolio/lab-desktop.jpg" 
+                    alt="Проект"
+                    />
+            </picture>
               <p class="overlay">
                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
               </p>
@@ -229,7 +493,40 @@
         <li class="portfolio-group">
           <a class="portfolio-group-link link" href="">
             <div class="portfolio-group-img-link">
-              <img src="./images/portfolio/business.jpg" alt="Growing Business" width="370" height="294">
+              <picture>
+                <source
+                srcset="./images/portfolio/business-desktop.webp 1x, ./images/portfolio/business-desktop@2x.webp 2x" 
+                media="(min-width: 1200px)"
+                type="image/webp"
+                />
+                <source
+                    srcset="./images/portfolio/business-desktop.jpg 1x, ./images/portfolio/business-desktop@2x.jpg 2x" 
+                    media="(min-width: 1200px)"
+                />
+                <source
+                srcset="./images/portfolio/business-tablet.webp 1x, ./images/portfolio/business-tablet@2x.webp 2x" 
+                media="(min-width: 768px)"
+                type="image/webp"
+                />
+                <source 
+                    srcset="./images/portfolio/business-tablet.jpg 1x, ./images/portfolio/business-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)" 
+                />
+                <source
+                srcset="./images/portfolio/business-mobile.webp 1x, ./images/portfolio/business-mobile@2x.webp 2x" 
+                media="(max-width: 767px)"
+                type="image/webp"
+                />
+                <source 
+                    srcset="./images/portfolio/business-mobile.jpg 1x, ./images/portfolio/business-mobile@2x.jpg 2x" 
+                    media="(max-width: 767px)" 
+                />
+                    <img 
+                    class="portfolio-group-img"
+                    src="./images/portfolio/business-desktop.jpg" 
+                    alt="Growing Business"
+                    />
+            </picture>
               <p class="overlay">
                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
               </p>
@@ -242,13 +539,13 @@
         </li>
       </ul>  
      </div>
-   </section> -->
+   </section> 
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer-container container">
-        <div>
+        <div class="footer-container__contacts">
             <a class="logo link" href="" lang="en">Web<span class="logo-studio-footer">Studio</span></a>
-            <address>
+            <address class="footer-container__address">
                 <ul class="list">
                     <li class="map-list">
                         <a class="address-map link" href="https://goo.gl/maps/ZxELNricPK3WxZS16" target="_blank">г. Киев, пр-т Леси Украинки, 26</a>
@@ -298,7 +595,7 @@
         <div class="footer-join-subscribe">
           <p class="footer-join-label">Подпишитесь на рассылку</p>
           <form class="footer-join-form">
-              <label>
+              <label class="footer-join-label">
                   <input name="footer-join" class="footer-join-input" type="text" placeholder="E-mail" required>
               </label>
           <button type="submit" class="footer-join-btn">Подписаться
@@ -308,7 +605,7 @@
           </button>
           </form>
       </div>
-    </div>  -->
+    </div> 
   </footer>
   <script src="./js/menu.js"></script>
 </body>
