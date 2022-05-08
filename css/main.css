@@ -758,12 +758,15 @@ img {
   margin-top: 10px;
 }
 
+@media screen and (max-width: 1199px) {
+  .about-section {
+    padding-bottom: 60px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .about-container__list:not(:first-child) {
     padding-top: 30px;
-  }
-  .about-container__list:last-child {
-    padding-bottom: 60px;
   }
   .about-container__title {
     text-align: center;
