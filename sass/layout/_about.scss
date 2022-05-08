@@ -23,7 +23,7 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    text-align: center;
+    
     text-transform: uppercase;
     color: var(--main-font-color);
     }
@@ -40,7 +40,13 @@
             &:not(:first-child) {
                 padding-top: 30px;
             }
+            &:last-child {
+                padding-bottom: 60px;
+            }
         }
+    .about-container__title {
+        text-align: center;
+    }
     .description-indent {
         display: none;
         }

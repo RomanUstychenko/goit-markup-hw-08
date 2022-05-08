@@ -41,6 +41,18 @@
                         0px 1px 2px rgba(0, 0, 0, 0.08),
                         0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
+// 0px + 767px
+@media screen and (max-width: 767px) {
+    .container-list-portfolio {
+        margin-bottom: 40px;
+    }
+    .btn-list-portfolio {
+        &:not(:nth-child(-n+3)) {
+            margin-top: 15px;
+            }
+    }
+}
    // 768px +
    @media screen and (min-width: 768px) {
         .list-portfolio {

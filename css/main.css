@@ -234,7 +234,7 @@ img {
   font-family: var(--primary-font-family);
   font-weight: 400;
   font-size: 12px;
-  line-height: 1,17;
+  line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--secondary-font-color);
 }
@@ -308,7 +308,7 @@ img {
   margin-top: 20px;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1,17;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--secondary-font-color);
 }
@@ -369,7 +369,7 @@ img {
   }
   .contact-form-checkbox-label {
     font-size: 14px;
-    line-height: 1,71;
+    line-height: 1.71;
   }
 }
 
@@ -746,7 +746,6 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-align: center;
   text-transform: uppercase;
   color: var(--main-font-color);
 }
@@ -762,6 +761,12 @@ img {
 @media screen and (max-width: 767px) {
   .about-container__list:not(:first-child) {
     padding-top: 30px;
+  }
+  .about-container__list:last-child {
+    padding-bottom: 60px;
+  }
+  .about-container__title {
+    text-align: center;
   }
   .description-indent {
     display: none;
@@ -1020,7 +1025,7 @@ img {
   font-family: var(--primary-font-family);
   font-weight: 700;
   font-size: 14px;
-  line-height: 1,14;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-background-color);
@@ -1052,7 +1057,7 @@ img {
   font-family: var(--primary-font-family);
   font-weight: 700;
   font-size: 14px;
-  line-height: 1,14;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -1240,6 +1245,15 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+@media screen and (max-width: 767px) {
+  .container-list-portfolio {
+    margin-bottom: 40px;
+  }
+  .btn-list-portfolio:not(:nth-child(-n+3)) {
+    margin-top: 15px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .list-portfolio {
     justify-content: center;
@@ -1265,7 +1279,7 @@ img {
   background-color: rgba(33, 150, 243, 0.9);
   font-family: var(--primary-font-family);
   font-size: 18px;
-  line-height: 1,56;
+  line-height: 1.56;
   letter-spacing: 0.03em;
   color: #FFFFFF;
   padding: 63px 24px 63px 24px;
@@ -1300,6 +1314,12 @@ img {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-font-color);
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio-group:not(:first-child) {
+    margin-top: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {

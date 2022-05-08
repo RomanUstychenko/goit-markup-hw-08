@@ -12,10 +12,10 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(33, 150, 243, 0.9);;
+    background-color: rgba(33, 150, 243, 0.9);
     font-family: var(--primary-font-family);
     font-size: 18px;
-    line-height: 1,56;
+    line-height: 1.56;
     letter-spacing: 0.03em;
     color: #FFFFFF;
     padding: 63px 24px 63px 24px;
@@ -49,6 +49,15 @@
     letter-spacing: 0.03em;
     color: var(--secondary-font-color);
     }
+
+// 0px + 767px
+@media screen and (max-width: 767px) {
+    .portfolio-group {
+            &:not(:first-child) {
+                margin-top: 30px;
+            }
+    }
+}
 // 768px +
 @media screen and (min-width: 768px) {
 .portfolio {
